@@ -23,6 +23,7 @@ if (__DEV__){
 export default configureStore = () =>{
     const store = createStore(
         persistedReducer,
+        
         compose(applyMiddleware)
     )
 }
